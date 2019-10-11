@@ -1,4 +1,5 @@
-def map_to_negativize(array)
+=begin
+  def map_to_negativize(array)
   count = 0
   while array[count] do
     array[count] = array[count] * -1
@@ -76,3 +77,114 @@ def reduce_to_any_true(array)
   end
   return false
 end
+
+=end
+
+
+
+
+#
+##
+#
+##
+#
+#
+#
+##
+##
+#
+##
+#
+#
+#
+##
+##
+#
+##
+#
+#
+#
+##
+##
+#
+##
+#
+#
+#
+##
+##
+#
+##
+#
+#
+#
+##
+##
+#
+##
+#
+#
+#
+##
+##
+#
+##
+#
+#
+#
+#
+
+
+def map_to_negativize(array)
+count = 0
+while array[count] do
+  array[count] = array[count] * -1
+  count += 1
+end
+return array
+end
+
+
+
+
+def map_to_no_change(array)
+  count = 0
+  while array[count] do
+    array[count] = array[count] * 1
+    count += 1
+  end
+  return array
+  end
+
+
+  def map_to_double(array)
+    count = 0
+    while array[count] do
+      array[count] = array[count] * 2
+      count += 1
+    end
+    return array
+    end
+
+
+    def map_to_square(array)
+      count = 0
+      while array[count] do
+        array[count] = array[count] ** 2
+        count += 1
+      end
+      return array
+      end
+
+
+
+
+      def reduce_to_total(array, starting_point=0)
+        total = starting_point
+        counter = 0
+        while counter < array.size do
+          total += array[counter]
+          counter += 1
+        end
+        total
+      end
