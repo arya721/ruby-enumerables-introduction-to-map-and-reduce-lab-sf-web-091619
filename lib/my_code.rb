@@ -136,7 +136,8 @@ end
 
 
 def map_to_negativize(array)
-
+array.map do |arr|
+  arr*-1
 end
 
 
